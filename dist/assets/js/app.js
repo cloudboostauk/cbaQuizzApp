@@ -1,34 +1,49 @@
 // Define your quiz questions and answers
 const quizQuestions = [
     {
-      question: "What is the capital of France?",
-      choices: ["Paris", "London", "Berlin", "Rome"],
+      question: "Which of the following statements is TRUE.",
+      choices: ["It is possible to use Autoscaling with EBS, rather than EC2.", 
+      "It is possible to configure an Autoscaling Group to repair degraded EBS volumes, without the need to terminate the EC2 instances.", 
+      "You are able to attach mutiple EBS volumes to an EC2 instance.", 
+      "You are able to at tach multiple EC2 instances to an EBS Volume."],
+      correctAnswer: 2
+    },
+    {
+      question: "How many Internet Gateways can you attach to your custom VPC?",
+      choices: ["3", "5", "4", "1"],
+      correctAnswer: 3
+    },
+    {
+      question: "A company wants to self-manage a database environment. Which of the following should be adopted to fulfil this requirement?",
+      choices: ["Use the DynamoDB service", 
+                "Provision the database using the AWS RDS service", 
+                "Provision the database using the AWS RDS service", 
+                "Create an EC2 Instance and install the database service accordingly"],
+      correctAnswer: 3
+    },
+    {
+      question: "You have been asked to identify a service on AWS that is a durable object storage. Which of the services will this be?",
+      choices: ["Elastic Compute Cloud (EC2)", 
+                "Mobile Hub", 
+                "Simple Service Storage (S3)",
+                "Elastic File Service (EFS)"],
+      correctAnswer: 2
+    },
+    {
+      question: "What data formats are policy documents written in?",
+      choices: ["yaml",
+                "json",
+                "xml",
+                "pdf"],
       correctAnswer: 0
     },
     {
-      question: "What is the largest planet in our solar system?",
-      choices: ["Jupiter", "Saturn", "Neptune", "Earth"],
-      correctAnswer: 0
-    },
-    {
-      question: "Which country is known as the 'Land of the Rising Sun'?",
-      choices: ["China", "Japan", "India", "Brazil"],
-      correctAnswer: 1
-    },
-    {
-      question: "What is the chemical symbol for gold?",
-      choices: ["Go", "Au", "Ag", "Gd"],
-      correctAnswer: 1
-    },
-    {
-      question: "Who painted the Mona Lisa?",
-      choices: ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
-      correctAnswer: 0
-    },
-    {
-      question: "Which year was the first iPhone released?",
-      choices: ["2005", "2007", "2010", "2013"],
-      correctAnswer: 1
+      question: "You need to restrict access to an S3 Bucket. Which of the following will you use to do so?",
+      choices: ["CloudFront",
+                "Identity Federation with Active Directory",
+                "S3 Bucket Policy",
+                "CloudWatch"],
+      correctAnswer: 2
     },
     // Add more questions here
   ];
